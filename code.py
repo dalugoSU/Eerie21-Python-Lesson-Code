@@ -111,3 +111,11 @@ print(name, "lived in a", building, ".")
 print("One day, all of a sudden,", name, "'s ", building, "was under attack.")
 print(name, "goes and grabs his", weapon, "and attacks the", enemy, ". ")
 print("Upon defeating the", enemy, ",", name, "is hailed as a hero by everyone.")
+
+# Different ways to print!
+name = "Fluffy"
+
+print("Hello" + name)
+print("Hello", name)
+print(f"Hello {name}")
+
