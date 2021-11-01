@@ -212,3 +212,15 @@ while count <= 5:
   print(count)
   count = count + 1
 
+# Notice how we have a condition. Out loop will run
+# until the condition is met!
+# NOTE: Careful with while loops, if the condition
+# is never met, then we could end up with an infinate
+# loop ( A loop that never ends )
+
+# For this reason:
+
+# For loops are good when we know how many times we want the loop to repeat
+
+# While loops are good when we do not know how many times we want the loop to repeat
+
