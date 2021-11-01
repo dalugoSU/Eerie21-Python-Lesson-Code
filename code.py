@@ -119,3 +119,96 @@ print("Hello" + name)
 print("Hello", name)
 print(f"Hello {name}")
 
+
+# Conditionals >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# Let's learn conditionals
+
+# Let's walk through a program that tells you if you need an umbrella or not
+
+is_raining = True
+
+# Now let's write our conditional
+if is_raining == True:
+  print("Bring an umbrella!")
+else:
+  print("It's sunny outside!")
+
+print("")
+
+# You can chain as many conditions as you'd like
+# using the keyword elif
+
+name = "daniel"
+user_guess = input("Guess my name: ")
+
+if user_guess == name:
+  print("You got it right!")
+elif user_guess == "mike":
+  print("interesting guess but not it!")
+else:
+  print("Wrong! Try again")
+
+print("")
+
+# As you can see I added another condition
+# by using "elif"
+# Notice how else does not use a condition
+# It just executes if nothing else works
+
+# You can check multiple conditions in one line
+
+# Slides =>>>>
+
+# AND: both have to be true
+# OR: only one needs to be true
+# NOT: The opposite (if true then false)
+
+# Let's write a program that checks whether it
+# is the weekend and it's not raining
+
+is_raining = False
+is_weekend = True
+
+if is_raining == False and is_weekend == True:
+  print("Let's go outside!")
+
+# You can also just use the name of the variable
+# to check for boolean
+if is_raining or is_weekend: 
+  print("One of those is true!")
+
+# Now I will check for is_raining
+if not is_raining:
+  print("It's not raining!")
+
+print("")
+
+
+# Intro to Loops >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# There are two types of loops that we will focus on
+# While loops
+# For loops
+
+# A for loop looks like this
+print("\nA for loop: ")
+for number in range(1, 11):
+  print(number)
+
+# You can print things in a sequence like a string
+name = "Daniel"
+print("\nMy name letter by letter: ")
+for letter in name:
+  print(letter)
+
+
+# for something in something do something
+
+# A while loop looks like this
+print("\nA while loop: ")
+count = 1
+while count <= 5:
+  print(count)
+  count = count + 1
+
