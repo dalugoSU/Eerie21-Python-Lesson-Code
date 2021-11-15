@@ -224,3 +224,34 @@ while count <= 5:
 
 # While loops are good when we do not know how many times we want the loop to repeat
 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Guess the number! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+import random
+
+user_name = input("What is your name: ")
+print("")
+
+guesses_taken = 0
+number_to_guess = random.randint(1, 20)
+
+print(f"{user_name}, I am thinking of a number between 1 and 20! You have 5 tries to get it right :D ")
+print("")
+
+while True:
+
+  user_guess = int(input("Enter your guess: "))
+  guesses_taken = guesses_taken + 1
+
+  if user_guess < number_to_guess:
+    print("Your guess is too low.\n")
+  elif user_guess > number_to_guess:
+      print("Your guess is too high.\n")
+  elif user_guess == number_to_guess:
+      print(f"You got it {user_name}! You figured it out in {guesses_taken} tries!\n")
+      break
+  
+  if guesses_taken == 5:
+    print("You are out of tries!\n")
+    break
+
+print("")
