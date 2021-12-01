@@ -255,3 +255,60 @@ while True:
     break
 
 print("")
+
+#  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Intro to lists >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# A list is created like this
+fruit_list = ["Apple", "Orange", "Berries"]
+
+# We can use a for loop to print all items in a list
+for fruit in fruit_list:
+  print(fruit)
+
+
+# We can index each element in a list with brackets and the index position
+
+# Remember position 1 is at 0, and the last position is at -1
+
+print(fruit_list[0]) # Apple
+print(fruit_list[1]) # Orange
+print(fruit_list[2]) # Berries
+
+print(fruit_list[-1]) # Berries
+
+# Be careful by indexing out of bounds, this will give an error because the item does not exist
+
+
+# Let's practice
+
+# Create a list of your choosing with as many elements as you'd like (String elements)
+
+# Use a for loop to print all elements
+
+# Use index to print first and last element
+
+
+
+# Lists can also hold elemnts of different types
+
+random_list = [4, "hello", True]
+# Let's print each item in this random list
+
+
+# How do we add elements to a list?
+# We use the append function
+
+random_list.append(5) # Will add 5 at the end of the list
+print(random_list) 
+
+# We can delete the last item as well
+random_list.pop() # will remove last item
+print(random_list)
+
+random_list.pop(1) # will remove second item
+print(random_list)
+
+random_list.remove(True)
+print(random_list)
+
+
