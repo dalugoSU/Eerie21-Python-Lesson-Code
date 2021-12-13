@@ -312,7 +312,7 @@ random_list.remove(True)
 print(random_list)
 
 
-# End of semester MadLib!
+# End of semester MadLib! ----------------------------------------------------------------------------
 
 # Final Semester Holiday MadLibs!
 
