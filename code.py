@@ -288,29 +288,101 @@ print(fruit_list[-1]) # Berries
 # Use index to print first and last element
 
 
-
 # Lists can also hold elemnts of different types
 
-random_list = [4, "hello", True]
-# Let's print each item in this random list
 
+# List with different elements
+random_list_elements = ["Hello", 5, False, ["No", 3.3]]
+
+# Create an empty list
+random_list = []
 
 # How do we add elements to a list?
 # We use the append function
 
+# Adds at the end of your list
+
 random_list.append(5) # Will add 5 at the end of the list
 print(random_list) 
+
+# Which removes at the end of your list
 
 # We can delete the last item as well
 random_list.pop() # will remove last item
 print(random_list)
 
-random_list.pop(1) # will remove second item
+random_list.append(5) # 0
+random_list.append(10) # 1
+random_list.append(5) # 1
+
+print(random_list)
+# Which removes the first occurrence of the elemtn on the list
+random_list.remove(5)
 print(random_list)
 
-random_list.remove(True)
-print(random_list)
 
-# End of semester MadLib! ---------------------------------------------------------------------------------
+# ACCESS WITH INDEX
 
-No copy paste!!!
+print(f"First element: {random_list[0]}")
+
+# Change element at position
+
+random_list[0] = "CHANGED"
+
+print(f"List after change: {random_list}")
+
+# GRIDS
+
+"""
+Since lists can store other lists
+we can create 'GRIDS' which can help
+us visualize different tables
+"""
+
+tic_tac_toe_board = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0]
+]
+
+print(f"Tic tac toe: \n{tic_tac_toe_board}")
+
+# How do we access??
+
+"""
+To access elements we think of rows and compile
+
+Think of this grid
+
+[][][]
+[][][]
+[][][]
+
+as:
+
+row 1   [col 1][col 2][col 3]
+row 2   [col 1][col 2][col 3]
+row 3   [col 1][col 2][col 3]
+
+to access a 1D list we use index like this
+
+test = [1, 2, 3]
+test[0] <= access firsst element "1"
+
+for a 2D list we use index like this [row][col]
+
+test2 = [
+  [1, 2, 3],
+  [4, 5, 6]
+]
+test[0][1] <= access first row, second column "2"
+
+"""
+
+tic_tac_toe_board = [
+  [0, 0, 0],
+  [0, False, 0],
+  [0, 0, 0]
+]
+
+# To access the item "False"
