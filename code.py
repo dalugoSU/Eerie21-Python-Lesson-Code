@@ -360,9 +360,9 @@ Think of this grid
 
 as:
 
-row 1   [col 1][col 2][col 3]
-row 2   [col 1][col 2][col 3]
-row 3   [col 1][col 2][col 3]
+row 0   [col 0][col 1][col 2]
+row 1   [col 0][col 1][col 2]
+row 2   [col 0][col 1][col 2]
 
 to access a 1D list we use index like this
 
