@@ -386,3 +386,80 @@ tic_tac_toe_board = [
 ]
 
 # To access the item "False"
+
+# Intro to functions
+
+# define name_function()
+
+# define
+# parameters
+
+# Add a second parameter
+def greet(name, favorite_food):
+  # Add print statement
+  # Add it to print statement
+  print(f"Hello {name} and your favorite is {favorite_food}")
+
+# call your function
+# put it here
+greet(name="John Clancy", favorite_food="Cake")
+
+
+# Add two parameters
+
+
+"""
+add_two_numbers(number_one=6, number_two=4):
+  result = number_one (6) + number_two (4) # 10
+
+  return result
+
+"""
+
+def add_two_numbers(num1, num2):
+  result = num1 + num2
+  return result
+
+
+
+# Functions are blocks of reusable code
+
+"""
+FUNCTION TEMPLATE
+
+def function_name(parameters(optional)):
+  function body
+  return statement (optional)
+"""
+
+"""
+Let's say we want to create a function that adds
+two numbers together.
+"""
+
+
+"""
+To create a function we use the "def" keyword
+
+then we name our function (in this case I named it add_two)
+
+Then we place parenthesis, and if needed parameters.
+
+Remember the fruit going into the blender? num1, and num2 in this case are the "fruit" in that scenario
+
+Then we return a value (in this case the sum)
+"""
+
+# To use a function we "call it" by typing its name and giving it the "ingredients" it requires
+
+"""
+
+Things to review
+
+* Functions can have multiple parameters or None
+* Functions can have no return
+* Once return is reached, function ends
+* Functions can call other functions
+
+"""
+
