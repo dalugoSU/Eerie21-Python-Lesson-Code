@@ -463,3 +463,35 @@ Things to review
 
 """
 
+# Let's create a funciton that checks winner
+def play_game(user, computer, user_wins, computer_wins):
+  # Make our global variables accessible
+  
+  if user == "rock" and computer == "rock":
+    print(f"It's Tie, {user_name}!")
+  elif user == "rock" and computer == "paper":
+    print(f"{user_name} lost!")
+    computer_wins = computer_wins + 1
+  elif user == "rock" and computer == "scissors":
+    print(f"{user_name} wins!")
+    user_wins = user_wins + 1
+  elif user == "paper" and computer == "paper":
+    print(f"It's Tie, {user_name}!")
+  elif user == "paper" and computer == "rock":
+    print(f"{user_name} wins!")
+    user_wins = user_wins + 1
+  elif user == "paper" and computer == "scissors":
+    print(f"{user_name} lost!")
+    computer_wins = computer_wins + 1
+  elif user == "scissors" and computer == "scissors":
+    print(f"It's Tie, {user_name}!")
+  elif user == "scissors" and computer == "paper":
+    print(f"{user_name} wins!")
+    user_wins = user_wins + 1
+  elif user == "scissors" and computer == "rock":
+    print(f"{user_name} lost!")
+    computer_wins = computer_wins + 1
+  else:
+    return
+  
+  return user_wins, computer_wins
