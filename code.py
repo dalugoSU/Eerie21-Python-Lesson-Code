@@ -495,3 +495,65 @@ def play_game(user, computer, user_wins, computer_wins):
     return
   
   return user_wins, computer_wins
+
+# Sets
+
+# Sets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+a_set = {"Hello", False, "Hello"}
+empty_set = set()
+
+print(type(a_set))
+print(f"A set: {a_set}")
+
+# TURN list into a set >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+a_list = ["Hello", True, "Hello"]
+
+another_set = set(a_list)
+print(f"Another set: {another_set}")
+
+# set operations
+# print(dir(set))
+# help(set.add)
+
+# ADD an element >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+test_set = set() # empty set
+
+print(f"Test set: {test_set}")
+
+test_set.add(10)
+test_set.add(True)
+test_set.add("Hello World")
+test_set.add(True)
+
+# to add multiple elements at once
+# accepts lists, strings, tuples as well as other sets as its arguments
+test_set.update([False, "another", 21])
+
+print(f"Test set after adding: {test_set}")
+
+# REMOVE an element >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+test_set.remove(10)
+print(f"Test set after removing 10: {test_set}")
+
+# test_set.remove(20) << ERROR! KeyError, 20 is not in set
+
+# GETTING an element >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# print(test_set[0]) ERROR! Not subscriptable
+
+"""
+Accessing a Set
+
+You can loop through the set items using a for loop, or check if a  value is present in the set by using the in keyword.
+
+"""
+print("\n\nLooping Through test_set\n")
+for item in test_set:
+  print(item)
+
+print(f"\nChecking if 20 in set: {20 in test_set}")
+
