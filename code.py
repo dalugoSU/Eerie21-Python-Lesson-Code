@@ -571,47 +571,71 @@ Before starting the challenges make sure you look at the code and ask any questi
 Challenges:
 
 1) Change the number of tries the user has until they lose
+  - User tries is how many tries they have to get it right
+
 2) Change the input message to get the user's asnwer
   - Example: "Please enter your guess: "
+
 3) If the user got the wrong answer, tell them if they should guess higher or lower
+  - HINT: Is the user guess greater or less than the actual number?
+
 4) Right now, the random number is from 0 - 10. Change this range!
   - Example: 1 - 20
+
 5) Print rules of the game before the game starts 
   - Rules: User has to guess number correctly
-6) Wrap current code into a function and call it to run the game
-  - HINT
-  - Declare a function by def functionName(AnyParametersHere):
-  - Call a function: functionName(AnyParametersHere)
+  - or ANYTHING YOU WANT
+
 7) Write Comments on the "hashtags bellow" on what the code below or next to the hashtag is doing
+
 8) Get the player's name before the game starts, save it in a variable and use it in the game messages.
   - Example: "You lost! McDonald"
+
 9) Free Code! Add anything you'd like no restrictions
+
 10) Add a comment below the game with the name of your favorite data structure. Also add one difference between a lists and a sets.
+
+6) Create a function of your choosing at the end, bellow all the code. Call this function
+  - Define a function: def functionName(AnyParametersHere):
+  - Call function: functionName()
+  
 
 You Did it!
 
 """
 
-# CHALLENGE 7 HERE
-number_of_tries_allowed = 3
+# Your name: 
 
-# CHALLENGE 7 HERE
+
+# CHALLENGE 5 Below this line
+
+
+# CHALLENGE 7
+number_of_tries_allowed = 5
+player_name = input("Enter your name: ")
+
+# CHALLENGE 7
 while number_of_tries_allowed != 0:
 
-  # CHALLENGE 7 HERE
-  user_asnwer = input("Guess the number: ")
+  # CHALLENGE 7
+  user_asnwer = input("Enter a number: ")
   random_number = random.randint(0, 10)
 
-  # CHALLENGE 7 HERE
+  # CHALLENGE 3 BELOW THIS LINE
+
+  # CHALLENGE 7
   if int(user_asnwer) == random_number:
     print("Congrats! You got it")
-    break # CHALLENGE 7 HERE
+    break # CHALLENGE 7
   else:
     print("That's wrong! try again...\n")
-    number_of_tries_allowed -= 1 # CHALLENGE 7 HERE
+    number_of_tries_allowed -= 1 # CHALLENGE 7
 
   if number_of_tries_allowed == 0:
     print(f"You lost! The number was {random_number}")
 
+# CHALLENGE 10 HERE
 
-# Challenge 10 HERE
+
+# Function here that prints hello, or something of your choosing Below this line
+
